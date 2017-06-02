@@ -4,9 +4,8 @@ const jsYaml = require('js-yaml');
 function pushLine(array, line) {
     if (line.trim()) {
         array.push(line);
-        return true;
     }
-    return false;
+    return true;
 }
 
 function buildEndpoint(route, yamlLines) {
